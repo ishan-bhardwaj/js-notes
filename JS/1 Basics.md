@@ -23,23 +23,38 @@ for (let i = 0; i <= 10; i++) {
 ## Functions ##
 - Functions -
 ```
-def sum(a, b) {
+function sum(a, b) {
     return a + b;
 }
 ```
 
 - Callback functions - a callback is a function passed as an argument to another function -
 ```
-def printConsole(data) {
+function printConsole(data) {
     console.log("Result: " + data);
 }
 
-def sum(a, b, printFn) {
+function sum(a, b, callback) {
     let result = a + b;
-    printFn(result);
+    console.log(callback)   // prints [Function: printConsole]
+    callback(result);
 }
 
 sum(5, 10, printToConsole);
+```
+
+- Anonymous functions -
+```
+function sumOfSquares(a, b, callback) {
+    const val1 = callback(a)
+    const val2 = callback(b)
+    console.log(callback)   // prints [Function (anonymous)]
+    return a + b
+}
+
+sumOfSquares(5, 10, function(a) {
+    return a * a
+})
 ```
 
 ## String Manipulation ##
