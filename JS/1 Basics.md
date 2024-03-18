@@ -149,4 +149,4 @@ Animal.isLiving()   // static function call
 
 ## Miscellaneous Notes ##
 - Importing external library - `const fs = require("fs")`
-- [http://latentflip.com/loupe](Visualize call stack)
+- [Visualize call stack](http://latentflip.com/loupe)
