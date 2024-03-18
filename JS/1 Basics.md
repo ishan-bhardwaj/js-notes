@@ -142,3 +142,11 @@ dog.describe()  // calling function on object
 Animal.isLiving()   // static function call
 ```
 
+## Common Async Functions ##
+- Run a specific function after some duration asynchronously - `setTimeout(fxnToRun, 1000)` - calls `fxnToRun` functions after 1000ms.
+- Read a file from filesystem - `fs.readFile()`
+- Fetch API to fetch data from an API endpoint.
+
+## Miscellaneous Notes ##
+- Importing external library - `const fs = require("fs")`
+- [http://latentflip.com/loupe](Visualize call stack)
