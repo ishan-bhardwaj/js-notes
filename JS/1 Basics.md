@@ -57,6 +57,33 @@ sumOfSquares(5, 10, function(a) {
 })
 ```
 
+### Arrow Functions ###
+- Using map with normal function -
+```
+const arr = [1, 2, 3, 4, 5]
+function transform(i) {
+    return i * 2
+}
+
+input.map(transform)   // [2, 4, 6, 8, 10]
+```
+- Using map with arrow function -
+```
+arr.map((i) => {
+    i * 2
+})
+```
+- Using filter with arrow function -
+```
+arr.filter((i) => {
+    if (n & 2 == 0) {
+        return true
+    } else {
+        return false
+    }
+})
+```
+
 ## String Manipulation ##
 - String length - `str.length`
 - Index of the first occurrence - `str.indexOf("World")`. Returns -1 if the substring is not present.
@@ -148,5 +175,5 @@ Animal.isLiving()   // static function call
 - Fetch API to fetch data from an API endpoint.
 
 ## Miscellaneous Notes ##
-- Importing external library - `const fs = require("fs")`
+- Importing external library - `const express = require("express")`
 - [Visualize call stack](http://latentflip.com/loupe)
